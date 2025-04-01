@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" fill="#333333" text-anchor="middle" font-weight="bold">Visual SourceSafe ワークフロー</text>
+  
+  <!-- VSS Database -->
+  <rect x="350" y="70" width="100" height="80" rx="10" fill="#4472C4" />
+  <text x="400" y="115" font-family="Arial" font-size="16" fill="white" text-anchor="middle">VSS</text>
+  <text x="400" y="135" font-family="Arial" font-size="16" fill="white" text-anchor="middle">データベース</text>
+  
+  <!-- Developer 1 -->
+  <rect x="100" y="220" width="180" height="220" rx="10" fill="#f5f5f5" stroke="#cccccc" stroke-width="2" />
+  <text x="190" y="250" font-family="Arial" font-size="18" fill="#333333" text-anchor="middle">開発者 1</text>
+  
+  <!-- Working folder 1 -->
+  <rect x="130" y="270" width="120" height="80" rx="5" fill="#5B9BD5" />
+  <text x="190" y="315" font-family="Arial" font-size="14" fill="white" text-anchor="middle">作業フォルダ</text>
+  
+  <!-- Developer 2 -->
+  <rect x="520" y="220" width="180" height="220" rx="10" fill="#f5f5f5" stroke="#cccccc" stroke-width="2" />
+  <text x="610" y="250" font-family="Arial" font-size="18" fill="#333333" text-anchor="middle">開発者 2</text>
+  
+  <!-- Working folder 2 -->
+  <rect x="550" y="270" width="120" height="80" rx="5" fill="#5B9BD5" />
+  <text x="610" y="315" font-family="Arial" font-size="14" fill="white" text-anchor="middle">作業フォルダ</text>
+  
+  <!-- Arrows and Actions -->
+  <!-- Checkout -->
+  <line x1="350" y1="120" x2="250" y2="260" stroke="#ED7D31" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+  <text x="270" y="170" font-family="Arial" font-size="14" fill="#ED7D31" text-anchor="middle">チェックアウト</text>
+  
+  <!-- Checkin -->
+  <line x1="250" y1="300" x2="350" y2="150" stroke="#70AD47" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="270" y="190" font-family="Arial" font-size="14" fill="#70AD47" text-anchor="middle">チェックイン</text>
+  
+  <!-- Get Latest -->
+  <line x1="450" y1="120" x2="550" y2="260" stroke="#4472C4" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+  <text x="530" y="170" font-family="Arial" font-size="14" fill="#4472C4" text-anchor="middle">最新取得</text>
+  
+  <!-- Checkin from dev 2 -->
+  <line x1="550" y1="300" x2="450" y2="150" stroke="#70AD47" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="530" y="190" font-family="Arial" font-size="14" fill="#70AD47" text-anchor="middle">チェックイン</text>
+  
+  <!-- Actions boxes -->
+  <rect x="130" y="370" width="120" height="50" rx="5" fill="#ED7D31" />
+  <text x="190" y="400" font-family="Arial" font-size="12" fill="white" text-anchor="middle">1. チェックアウト</text>
+  <text x="190" y="415" font-family="Arial" font-size="12" fill="white" text-anchor="middle">2. 編集</text>
+  
+  <rect x="550" y="370" width="120" height="50" rx="5" fill="#ED7D31" />
+  <text x="610" y="400" font-family="Arial" font-size="12" fill="white" text-anchor="middle">1. 最新版取得</text>
+  <text x="610" y="415" font-family="Arial" font-size="12" fill="white" text-anchor="middle">2. 編集</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+        markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333" />
+    </marker>
+  </defs>
+</svg>
